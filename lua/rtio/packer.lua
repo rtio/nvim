@@ -39,4 +39,14 @@ return require('packer').startup(function(use)
 		  {'L3MON4D3/LuaSnip'},
 	  }
   }
+  use('eandrju/cellular-automaton.nvim')
+  use('github/copilot.vim')
+  use('ThePrimeagen/vim-be-good')
+  use {
+      'nvim-tree/nvim-tree.lua',
+      'nvim-tree/nvim-web-devicons' -- optional
+  }
+  use {
+      'gelguy/wilder.nvim'
+  }
 end)
