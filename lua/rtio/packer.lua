@@ -50,4 +50,10 @@ return require('packer').startup(function(use)
       'gelguy/wilder.nvim'
   }
   use('christoomey/vim-tmux-navigator')
+  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
+  use {
+        separator_style = "slant",
+      'nvim-lualine/lualine.nvim',
+      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
 end)
