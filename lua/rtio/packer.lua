@@ -49,4 +49,5 @@ return require('packer').startup(function(use)
   use {
       'gelguy/wilder.nvim'
   }
+  use('christoomey/vim-tmux-navigator')
 end)

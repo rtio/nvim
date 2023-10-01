@@ -179,6 +179,11 @@ _G.packer_plugins = {
     path = "/Users/rtiodev/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
+  ["vim-tmux-navigator"] = {
+    loaded = true,
+    path = "/Users/rtiodev/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
+    url = "https://github.com/christoomey/vim-tmux-navigator"
+  },
   ["wilder.nvim"] = {
     loaded = true,
     path = "/Users/rtiodev/.local/share/nvim/site/pack/packer/start/wilder.nvim",
