@@ -20,17 +20,15 @@ return require('packer').startup(function(use)
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('nvim-treesitter/playground')
   use('nvim-lua/plenary.nvim')
---  use('ThePrimeagen/harpoon')
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
   use {
 	  'VonHeikemen/lsp-zero.nvim',
-	  branch = 'v3.x',
+	  branch = 'v4.x',
 	  requires = {
 		  --- Uncomment these if you want to manage LSP servers from neovim
 		  {'williamboman/mason.nvim'},
 		  {'williamboman/mason-lspconfig.nvim'},
-
 		  -- LSP Support
 		  {'neovim/nvim-lspconfig'},
 		  -- Autocompletion
@@ -56,4 +54,14 @@ return require('packer').startup(function(use)
       'nvim-lualine/lualine.nvim',
       requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
+ use({
+	"Pocco81/auto-save.nvim",
+	config = function()
+		 require("auto-save").setup {
+			-- your config goes here
+			-- or just leave it empty :)
+		 }
+	end,
+ })
+ use("folke/which-key.nvim")
 end)
